@@ -2,7 +2,7 @@
 package com.example.clinicdepartment;
 
 public class Clinic {
-    String Category;
+    String id;
     public static final Clinic[] clinics = {
 
             new Clinic("http://10.0.2.2:84/clinic/readData.php?id=1")
@@ -10,16 +10,16 @@ public class Clinic {
     };
 
 
-    public Clinic(String category) {
-        Category = category;
+    public Clinic(String id) {
+        id = id;
     }
 
-    public String getCategory() {
-        return Category;
+    public String getId() {
+        return id;
     }
 
-    public void setCategory(String category) {
-        Category = category;
+    public void setId(String id) {
+        id = id;
     }
 
 }
