@@ -17,11 +17,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 public class MainActivity extends AppCompatActivity {
-    ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        String url = "http://10.0.2.2:84/clinic/readData.php";
         ArrayAdapter<Clinic> listAdapter = new ArrayAdapter<Clinic>(this,
                 android.R.layout.simple_list_item_1,
                 Clinic.clinics);
