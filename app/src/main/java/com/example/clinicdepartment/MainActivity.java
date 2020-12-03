@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         ListView edtCat = findViewById(R.id.clinicCat);
 
 
-        String url = "http://10.0.2.2:84/rest/info.php?id=";
+        String url = "http://10.0.2.2:84/clinic/readData.php?id=1";
         if (ContextCompat.checkSelfPermission(this,
                 Manifest.permission.INTERNET)
                 != PackageManager.PERMISSION_GRANTED) {
